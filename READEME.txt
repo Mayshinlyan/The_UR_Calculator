@@ -1,0 +1,39 @@
+/* Name: May Shin Lyan @ Hnin Oo Wai 
+ * NetID: hwai
+ * Proj2: UR Calculator MW 3:25pm
+ * email : hwai@u.rochester.edu 
+ * lab partner: Rose
+ * references: 
+	https://stackoverflow.com/questions/12269191/postfix-calculator-java
+	https://stackoverflow.com/questions/16874176/parenthesis-brackets-matching-using-stack-algorithm
+ */
+ 
+ 
+ > The project has just one class URCalculator.java file
+ 
+ > INCLUDED METHODS:
+ 
+ 	I. main()
+ 			1. Hashmap 'operator' stores the operators according to their precedence
+ 			2. The calculator is looped through the while loop with boolean 'exit' which will exit when the user enter exit.
+ 			3. checks user input for 'clear all', 'clear VarX', 'exit' and calculations
+ 			4. ignores the user spaces in the user input.
+ 			5. does the calculation if the expression is well-formed by calling the method isParenthesisMatch().
+ 			6. uses the string.split method to split the user input string into corresponding array[]
+ 			7. converts the array[] into an arraylist
+ 			8. calls extraOp() to remove any extra operators.
+ 			9. converts the infix to postfix expression by calling the infixToPostfix()
+ 			10. pass the result into calculate().
+ 			
+ 	II. isParenthesisMatch() : returns true if all the parenthesis match and false if they are not well formed. 
+ 	III.extraOp() : remove any extra operators. Eg: ++++a = a
+ 	IV. infixToPostfix() : converts the user input infix expression into postfix expression
+ 	V.  calculate: calculate the postfix expression
+ 	VI. isAlpha() : return true if the string is an alpahabet
+ 	VII. isNumeric() : return true if the string is a number 
+ 
+ > Exceptions for invalid expression, not well-formed expression, zero division, and variable not defined are catched. 
+ 	
+ 
+ 
+
